@@ -9,7 +9,7 @@ export function DetailsComponent() {
     const params = useParams();
 
     useEffect(() => {
-        fetch(`http://fakestoreapi.com/products/${params.id}`)
+        fetch(`https://fakestoreapi.com/products/${params.id}`)
             .then(response => response.json())
             .then(data => {
                 setProduct(data)
