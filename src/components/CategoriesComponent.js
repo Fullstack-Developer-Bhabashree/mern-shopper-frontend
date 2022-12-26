@@ -15,7 +15,7 @@ export function CategoriesComponent() {
         if (cookies.username === undefined && logincheck === false) {
             navigate("/login")
         } else {
-            fetch('http://fakestoreapi.com/products/categories')
+            fetch('https://fakestoreapi.com/products/categories')
                 .then(response => response.json())
                 .then(data => {
                     setCategories(data);

@@ -115,14 +115,16 @@ function SearchFeed() {
                                                         </MDBBtn>
                                                     </Link>
                                                     
-                                                        <MDBBtn
+                                                       {
+                                                        (cookies.username !== undefined) && ( <MDBBtn
                                                             outline color="primary"
                                                             size="sm"
                                                             className="mt-2 w-100"
                                                             onClick={() => updateWishlist(prod.id)}
                                                         >
                                                             Add to wish list
-                                                        </MDBBtn>
+                                                        </MDBBtn>)
+                                                       }
                                                     
                                                 </div>
                                             </MDBCol>
