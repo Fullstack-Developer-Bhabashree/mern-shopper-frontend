@@ -13,7 +13,6 @@ export function DetailsComponent() {
     useEffect(() => {
         axios.get(`${BASE_URL}/getProductDetails/${params.id}`).then(async (response) => {
             await setProduct([])
-            console.log(response.data[0]);
             await setProduct(response.data[0])
         })
     }, [params.id])
